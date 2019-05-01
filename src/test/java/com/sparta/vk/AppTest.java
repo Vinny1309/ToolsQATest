@@ -72,30 +72,36 @@ public class AppTest
     }
 
     @Test
-    public void testMaleSexRadioButtonIsSelected(){
-        toolsQAWebsite.automationPracticePage().isMaleSexRadioButtonClicked();
+    public void testMaleRadioButtonIsSelected(){
+        assertTrue(toolsQAWebsite.automationPracticePage().isMaleRadioButtonClicked());
     }
 
     @Test
-    public void testFemaleSexRadioButtonIsSelected(){
-        toolsQAWebsite.automationPracticePage().isFemaleSexRadioButtonClicked();
+    public void testFemaleRadioButtonIsSelected(){
+        assertTrue(toolsQAWebsite.automationPracticePage().isFemaleRadioButtonClicked());
     }
 
     @Test
-    public void testMaleSexRadioButtonIsDisplayed(){
+    public void testMaleRadioButtonIsDisplayed(){
          assertTrue(toolsQAWebsite.automationPracticePage().isMaleRadioButtonDisplayed());
 }
 
     @Test
-    public void testFemaleSexRadioButtonIsDisplayed(){
+    public void testFemaleRadioButtonIsDisplayed(){
         assertTrue(toolsQAWebsite.automationPracticePage().isFemaleRadioButtonDisplayed());
     }
 
     @Test
-    public void testNumberOfSexRadioButtons(){
+    public void testNumberOfGenderRadioButtons(){
         toolsQAWebsite.automationPracticePage().goToHomePage();
-        int numberOfRadioButtons = toolsQAWebsite.automationPracticePage().getNumberOfSexRadioButtons();
+        int numberOfRadioButtons = toolsQAWebsite.automationPracticePage().getNumberOfGenderRadioButtons();
         assertEquals(numberOfRadioButtons, 2);
+    }
+
+    @Test
+    public void testAllSeleniumCommandsAreClicked(){
+        toolsQAWebsite.automationPracticePage().clickAllSeleniumCommands();
+        assertTrue(toolsQAWebsite.automationPracticePage().areAllSeleniumCommandsSelected());
     }
 
     @AfterClass

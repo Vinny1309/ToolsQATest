@@ -8,25 +8,28 @@ public class App {
         ToolsQAWebsite toolsQAWebsite = new ToolsQAWebsite(new ChromeDriver());
 
         toolsQAWebsite.automationPracticePage().goToHomePage();
-        toolsQAWebsite.automationPracticePage().clickPartialLinkTest();
-        toolsQAWebsite.automationPracticePage().clickLinkTest();
-        toolsQAWebsite.automationPracticePage().navigateBack();
+//        toolsQAWebsite.automationPracticePage().clickPartialLinkTest();
+//        toolsQAWebsite.automationPracticePage().clickLinkTest();
+//        toolsQAWebsite.automationPracticePage().navigateBack();
+//
+//        toolsQAWebsite.automationPracticePage().inputFirstName("dgknfd");
+//        toolsQAWebsite.automationPracticePage().getFirstNameInput();
+//
+//        toolsQAWebsite.automationPracticePage().inputLastName("LastName");
+//        toolsQAWebsite.automationPracticePage().getLastNameInput();
+//
+//        toolsQAWebsite.automationPracticePage().clickMaleRadioButton();
+//        toolsQAWebsite.automationPracticePage().clickFemaleRadioButton();
+//        toolsQAWebsite.automationPracticePage().getNumberOfGenderRadioButtons();
 
-        toolsQAWebsite.automationPracticePage().inputFirstName("dgknfd");
-        toolsQAWebsite.automationPracticePage().getFirstNameInput();
+        //toolsQAWebsite.automationPracticePage().clickAllExpButtons();
+        toolsQAWebsite.automationPracticePage().clickAllSeleniumCommands();
 
-        toolsQAWebsite.automationPracticePage().inputLastName("LastName");
-        toolsQAWebsite.automationPracticePage().getLastNameInput();
-
-        toolsQAWebsite.automationPracticePage().clickMaleRadioButton();
-        toolsQAWebsite.automationPracticePage().clickFemaleRadioButton();
-        toolsQAWebsite.automationPracticePage().getNumberOfSexRadioButtons();
-
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         toolsQAWebsite.quitDriver();
     }
 }
