@@ -106,7 +106,7 @@ public class AppTest
 
     @AfterClass
     public static void quitDriver() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         toolsQAWebsite.quitDriver();
     }
 }
